@@ -5,14 +5,10 @@ func main() {
 	// card := newCard()
 	// cards := []string{ "Ace of Diamonds", newCard() }
 
-	cards := deck{ "Ace of Diamonds", newCard() }
-	cards = append(cards, "Six of Spades")
+	cards := newDeck()
 
-	cards.print()
+	hand, remainingCards := deal(cards, 5)
 
-	printState()
-}
-
-func newCard() string {
-	return "Ace of Spades"
+	hand.print()
+	remainingCards.print()
 }
