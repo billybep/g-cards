@@ -5,10 +5,13 @@ func main() {
 	// card := newCard()
 	// cards := []string{ "Ace of Diamonds", newCard() }
 
+	
+	// hand, remainingCards := deal(cards, 5)
+	
+	// hand.print()
+	// remainingCards.print()
+
 	cards := newDeck()
+	cards.saveToFile("my_cards")
 
-	hand, remainingCards := deal(cards, 5)
-
-	hand.print()
-	remainingCards.print()
 }
